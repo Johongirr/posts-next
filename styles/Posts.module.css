@@ -1,0 +1,13 @@
+ 
+.card {
+    background: #fff;
+    padding: 1rem ;
+    border-left: 10px solid transparent;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.card:hover {
+    transition: all .4s;
+    border-left: 10px solid blue;
+}
+ 

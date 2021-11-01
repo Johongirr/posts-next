@@ -1,18 +1,14 @@
 import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import styles from "../styles/Home.module.css";
-
-export default function Home() {
+const About = () => {
   return (
     <>
       <Head>
-        <title>Posts | Home</title>
+        <title>Posts | About</title>
         <meta name="keywords" content="posts" />
       </Head>
-      <div className={styles.container}>
-        <header className="home__header">
-          <h1 className="home__title">Homepage</h1>
+      <div className="about">
+        <header className="about__header">
+          <h1 className="about__title">About</h1>
         </header>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
@@ -26,10 +22,9 @@ export default function Home() {
           reprehenderit suscipit dolorum tenetur amet culpa ab ex doloremque
           inventore. Vero, nobis!
         </p>
-        <Link href="/posts">
-          <a className={styles.btn}>See Posts Listing</a>
-        </Link>
       </div>
     </>
   );
-}
+};
+
+export default About;
